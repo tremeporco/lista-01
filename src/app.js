@@ -1,8 +1,9 @@
 import express from "express";
 
 const app = express();
-const PORT = process.env.PORT ?? 3000;
 
+
+//aqui tem a rota de health que retorna um json com status ok.
 app.get("/", (req, res) => {
   res.json({
     status: "ok",
